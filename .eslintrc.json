@@ -1,0 +1,35 @@
+{
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react/jsx-runtime"],
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+    "env": {
+        "node": true,
+        "es6": true,
+		"jest": true,
+		"browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2021,
+		"sourceType": "module"
+    },
+    "rules": {
+        "array-bracket-spacing": ["error", "always"],
+        "padded-blocks": ["error", { "blocks": "never" }],
+        "key-spacing": ["error", { "afterColon": true }],
+        "indent": ["error", "tab"],
+        "camelcase": "error",
+        "curly": "error",
+        "brace-style": ["error", "1tbs"],
+        "arrow-parens": ["error", "always"],
+        "arrow-spacing": "error",
+        "comma-dangle": ["error", "always-multiline"],
+        "semi": ["error", "never"],
+        "quotes": ["error", "double"],
+        "no-empty-function": "error",
+        "no-extra-semi": "error",
+        "no-trailing-spaces": "error"
+    }
+}
